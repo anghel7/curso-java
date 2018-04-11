@@ -17,5 +17,8 @@ public class Student extends Person{
         super(name, lastname, dateOfBirthday, dni);
         this.codsis = codsis;
     }
-        
+    @Override
+    public String gretting(){
+        return "Hello, I am a student and my name is: "+this.name;
+    }
 }

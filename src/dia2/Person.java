@@ -9,11 +9,11 @@ package dia2;
  *
  * @author skypper
  */
-public class Person {
-    private String name;
-    private String lastname;
-    private String dateOfBirthday;
-    private String dni;
+public abstract class Person {
+    protected String name;
+    protected String lastname;
+    protected String dateOfBirthday;
+    protected String dni;
 
     public Person(String name, String lastname, String dateOfBirthday, String dni) {
         this.name = name;
@@ -59,5 +59,6 @@ public class Person {
         return "Person{" + "name=" + name + ", lastname=" + lastname + ", dateOfBirthday=" + dateOfBirthday + ", dni=" + dni + '}';
     }
     
+    public abstract String gretting();   
     
 }

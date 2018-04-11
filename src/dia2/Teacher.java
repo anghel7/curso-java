@@ -25,6 +25,8 @@ public class Teacher extends Person{
     public void setProfession(String profession) {
         this.profession = profession;
     }
-    
-
+    @Override
+    public String gretting(){
+        return "Hello, I am a teacher and my proffession is:"+this.profession;
+    }
 }
