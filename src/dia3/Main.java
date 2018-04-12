@@ -27,5 +27,14 @@ public class Main {
         System.out.println("Bicycle2");
         System.out.println(bicycle2.getStates());
         
+        System.out.println("Bicycle3");
+        System.out.println("testing states changes:");
+        System.out.println(bicycle3.getStates());
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        bicycle3.incrementSpeed();
+        System.out.println(bicycle3.getStates());
+        
     }
 }

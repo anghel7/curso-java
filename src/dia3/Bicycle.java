@@ -10,11 +10,11 @@ package dia3;
  * @author skypper
  */
 public class Bicycle {
-    int candence = 0;
-    int speed = 0;
-    int gear = 1;
-    double price;
-    String brand;
+    private int candence = 0;
+    private int speed = 0;
+    private int gear = 1;
+    private double price;
+    private String brand;
 
     public Bicycle(double price, String brand) {
         this.price = price;
@@ -39,6 +39,10 @@ public class Bicycle {
         return "Cadence: "+this.candence+", Speed: "+this.speed+", Gear:"+this.gear;
     };
 
+    public void incrementSpeed(){
+        this.speed = this.speed +1;
+    }
+    
     public double getPrice() {
         return price;
     }
@@ -46,6 +50,9 @@ public class Bicycle {
     public String getBrand() {
         return brand;
     }
-    
-    
+
+    public int getSpeed() {
+        return speed;
+    }
+        
 }
