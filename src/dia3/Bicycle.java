@@ -38,10 +38,14 @@ public class Bicycle {
     public String getStates(){
         return "Cadence: "+this.candence+", Speed: "+this.speed+", Gear:"+this.gear;
     };
-
+   
     public void incrementSpeed(){
         this.speed = this.speed +1;
-    }
+    }   
+    
+    public void incrementSpeed(int speed){
+        this.speed = this.speed + speed;
+    }    
     
     public double getPrice() {
         return price;
