@@ -56,9 +56,14 @@ public class University {
 
     public void showListPerson() {
         System.out.println("Person list");
-        //f (int i = 0; i <= 5; i++) {
         for (int i = 0; i < persons.length; i++) {
             System.out.println(persons[i]);
         }
     }
+
+    @Override
+    public String toString() {
+        return "University{" + "name=" + name + ", count=" + count + ", persons=" + persons + '}';
+    }
+    
 }
