@@ -24,4 +24,14 @@ public class Rectangle extends Shape {
     public String gretting() {
         return "Hello i am Rectangle";
     }
+
+    @Override
+    public double calculateArea() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double caculatePerimeter() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
